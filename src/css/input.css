@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Sebelum menjalan CSS, tailwind akan menjalankan file ini dahulu dengan 3 layer tsb. */
-/* @tailwind base untuk meriset CSS default browser sehingga kendali penuh ada di kita*/
-/* @tailwind components untuk membuat komponen kita seperti grid sistem, container, dst*/
-/* @tailwind utilities, tailwind akan menjalankan kelas utilities ini sebelum menjalankan file css web kita */
+body {
+  font-family: "Poppins", sans-serif;
+}
