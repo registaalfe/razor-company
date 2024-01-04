@@ -1,154 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Razor</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <script
-      src="https://kit.fontawesome.com/cb159ff4e1.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Header Start -->
-    <header class="bg-[#DFD8FF] top-0 left-0 w-full flex items-center z-10">
-      <div class="container">
-        <div class="flex items-center justify-between">
-          <div class="px-16 py-4">
-            <a href="#" class="text-2xl">Razor</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/cb159ff4e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header Start -->
+  <header class="bg-[#DFD8FF] top-0 left-0 w-full flex items-center z-10">
+    <div class="container">
+      <div class="flex items-center justify-between">
+        <div class="px-16 py-4">
+          <a href="#" class="text-2xl">Razor</a>
+        </div>
+
+        <nav>
+          <ul class="flex">
+            <li class="group">
+              <a href="#"
+                class="text-base px-6 py-2 rounded-lg group-hover:bg-[#A38EF7] focus:bg-[#A38EF7] hover:text-white focus:text-white">Sign
+                Up</a>
+            </li>
+
+            <li class="group ml-[2px]">
+              <a href="#"
+                class="text-base px-6 py-2 rounded-lg group-hover:bg-[#A38EF7]  focus:text-white focus:bg-[#A38EF7] hover:text-white">Request
+                Demo</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Login Section Start -->
+  <section class="flex bg-[#DFD8FF] pt-36 pb-32 items-center justify-center">
+    <img src="/public/img/login-img1.png" alt="" class="w-[20%] border-b-2 border-gray-100" />
+    <div class="container w-[40%] rounded-3xl bg-white">
+      <div class="flex flex-wrap px-14">
+        <div class="block w-full px-4 mt-10 mb-10 justify-center items-center">
+          <h2 class="font-semibold text-2xl text-center">Agent Login</h2>
+          <p class="text-base text-center mt-4 px-12">
+            Hey, enter your details to get sign in to your account
+          </p>
+
+          <div class="mt-8">
+            <input type="text" name="username" id="username" placeholder="Enter email"
+              class="border w-full text-base rounded-md py-2 px-4" />
           </div>
 
-          <nav>
-            <ul class="flex">
-              <li class="group">
-                <a
-                  href="#"
-                  class="text-base px-6 py-2 rounded-lg group-hover:bg-[#A38EF7] hover:text-white"
-                  >Sign Up</a
-                >
-              </li>
+          <div class="mt-4">
+            <input type="password" name="password" id="password" placeholder="Password"
+              class="border w-full text-base rounded-md py-2 px-4" />
+          </div>
 
-              <li class="group ml-[2px]">
-                <a
-                  href="#"
-                  class="text-base px-6 py-2 rounded-lg group-hover:bg-[#A38EF7] active:bg-[#A38EF7] focus:bg-[#A38EF7] hover:text-white"
-                  >Request Demo</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- Header End -->
+          <div class="mt-4">
+            <a href="#" class="hover:text-gray-600">Forgot Password?</a>
+          </div>
 
-    <!-- Login Section Start -->
-    <section class="flex bg-[#DFD8FF] pt-36 pb-32 items-center justify-center">
-      <img
-        src="/public/img/login-img1.png"
-        alt=""
-        class="w-[20%] border-b-2 border-gray-100"
-      />
-      <div class="container w-[40%] rounded-3xl bg-white">
-        <div class="flex flex-wrap px-14">
-          <div
-            class="block w-full px-4 mt-10 mb-10 justify-center items-center"
-          >
-            <h2 class="font-semibold text-2xl text-center">Agent Login</h2>
-            <p class="text-base text-center mt-4 px-12">
-              Hey, enter your details to get sign in to your account
-            </p>
+          <div class="mt-8">
+            <button
+              class="rounded-md text-white bg-[#A38EF7] w-full py-2 px-2 cursor-pointer hover:text-gray-100 font-semibold focus:text-white">
+              Sign in
+            </button>
+          </div>
 
-            <div class="mt-8">
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Enter email"
-                class="border w-full text-base rounded-md py-2 px-4"
-              />
-            </div>
+          <div class="mt-8 text-center">
+            <span class="font-normal">- Or Sign in with -</span>
+          </div>
 
-            <div class="mt-4">
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-                class="border w-full text-base rounded-md py-2 px-4"
-              />
-            </div>
-
-            <div class="mt-4">
-              <a href="#" class="hover:text-gray-600">Forgot Password?</a>
-            </div>
-
-            <div class="mt-8">
-              <button
-                class="rounded-md bg-[#A38EF7] w-full py-2 px-2 cursor-pointer hover:text-white font-semibold"
-              >
-                Sign in
+          <div class="flex justify-center mt-8 w-full">
+            <div class="px-1">
+              <button class="rounded-md bg-white px-4 py-2 shadow-sm ring-gray-300 hover:bg-gray-50">
+                <i class="fa-brands fa-google pr-1"></i>
+                Google
               </button>
             </div>
 
-            <div class="mt-8 text-center">
-              <span class="font-normal">- Or Sign in with -</span>
+            <div class="px-1">
+              <button class="rounded-md w-full bg-white px-4 py-2 shadow-sm ring-gray-300 hover:bg-gray-50">
+                <i class="fa-brands fa-apple pr-1"></i>
+                Apple ID
+              </button>
             </div>
 
-            <div class="flex justify-center mt-8 w-full">
-              <div class="px-1">
-                <button
-                  class="rounded-md bg-white px-4 py-2 shadow-sm ring-gray-300 hover:bg-gray-50"
-                >
-                  <i class="fa-brands fa-google pr-1"></i>
-                  Google
-                </button>
-              </div>
-
-              <div class="px-1">
-                <button
-                  class="rounded-md w-full bg-white px-4 py-2 shadow-sm ring-gray-300 hover:bg-gray-50"
-                >
-                  <i class="fa-brands fa-apple pr-1"></i>
-                  Apple ID
-                </button>
-              </div>
-
-              <div class="px-1">
-                <button
-                  class="rounded-md w-full bg-white px-4 py-2 shadow-sm ring-gray-300 hover:bg-gray-50"
-                >
-                  <i class="fa-brands fa-facebook pr-1"></i>
-                  Facebook
-                </button>
-              </div>
+            <div class="px-1">
+              <button class="rounded-md w-full bg-white px-4 py-2 shadow-sm ring-gray-300 hover:bg-gray-50">
+                <i class="fa-brands fa-facebook pr-1"></i>
+                Facebook
+              </button>
             </div>
+          </div>
 
-            <div class="mt-10 w-full text-center">
-              <span
-                >Don't have an account?
-                <a href="#" class="font-semibold hover:text-gray-600"
-                  >Request Now</a
-                ></span
-              >
-            </div>
+          <div class="mt-10 w-full text-center">
+            <span>Don't have an account?
+              <a href="#" class="font-semibold hover:text-gray-600">Request Now</a></span>
           </div>
         </div>
       </div>
-      <img
-        src="/public/img/login-img2.png"
-        alt=""
-        class="w-[20%] border-b-2 border-gray-100"
-      />
-    </section>
-    <!-- Login Section End -->
-  </body>
+    </div>
+    <img src="/public/img/login-img2.png" alt="" class="w-[20%] border-b-2 border-gray-100" />
+  </section>
+  <!-- Login Section End -->
+</body>
+
 </html>
